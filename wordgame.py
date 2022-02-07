@@ -1,5 +1,4 @@
-from time import time
-import random, math
+import random, time
 from venv import main
 
 fullMatch = "✓" # Used when the letter is correct.
