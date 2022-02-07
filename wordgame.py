@@ -6,7 +6,7 @@ fullMatch = "✓" # Used when the letter is correct.
 partialMatch = "!" # Used when the letter in that position is in the word, but not in the right position.
 noMatch = "x" # Used when the letter in that position doesn't match anything in the word.
 
-def get_Words():
+def get_Words(): # Loads every word from sgb-words.txt
     with open('sgb-words.txt','r') as f:
         words = f.read().splitlines()
     return words
@@ -47,7 +47,9 @@ def main():
             print("Word not recognized.")
     if hasWon:
         print("Congratulations! You won!")
+        time.sleep(5)
     else:
         print("Better luck next time!")
+        time.sleep(5)
 
 main()
